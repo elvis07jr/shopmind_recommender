@@ -1,0 +1,110 @@
+# ========================================
+# Python & Jupyter
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+mypy_cache/
+.dmypy.json
+.nox/
+.pyre/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*.ipynb*
+
+# Jupyter Lab / VS Code
+.vsc*
+.jupyter/
+
+# ========================================
+# Conda & Virtual Environments
+# ========================================
+# Conda environment (if using local env)
+/envs/
+# Or if you named it shopmind-recommender
+shopmind-recommender/
+
+# Generic venv
+venv/
+env/
+venv.bak/
+env.bak/
+.venv/
+ENV/
+
+# Virtual environment metadata
+pip-selfcheck.json
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ========================================
+# Data & Models (optional: keep out of repo)
+# ========================================
+# Datasets (especially large ones)
+
+*.xlsx
+*.parquet
+*.feather
+
+# Saved models and encoders
+*.pkl
+*.joblib
+model.pkl
+encoder.pkl
+recommendation_rules.pkl
+transaction_encoder.pkl
+
+# ========================================
+# Streamlit & Deployment
+# ========================================
+# Streamlit secrets (NEVER commit!)
+.secrets.toml
+
+# Streamlit cache
+.streamlit/
+
+# ========================================
+# OS & Editor Files
+# ========================================
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs_vista.db
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Vim
+.*.swp
+.*.swo
+*.un~
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list/
+tramp
+.\#*
+
+# IDEs
+.idea/
+*.swp
+*.swo
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject

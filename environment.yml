@@ -1,0 +1,37 @@
+name: shopmind-recommender
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  # Python version
+  - python=3.10
+
+  # Core data science
+  - pandas
+  - numpy
+
+  # Plotting
+  - matplotlib
+  - seaborn
+
+  # Machine learning & association rules
+  - scikit-learn           # Required by mlxtend
+  - mlxtend                # For Apriori and association rules
+
+  # Web app framework
+  - streamlit
+
+  # Optional: Development tools
+  - jupyter
+  - notebook
+
+  # Pip for any package not available via conda
+  - pip
+
+  # If you need ucimlrepo (for fetching dataset)
+  - pip:
+    - ucimlrepo
+
+# Optional: activate notebook extensions
+prefix: ./envs/shopmind-recommender
